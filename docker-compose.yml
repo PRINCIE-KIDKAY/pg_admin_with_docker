@@ -2,7 +2,7 @@ version: "3.8"
 services:
   pgadmin:
     container_name: pgadmin4_container
-    build: .
+    image: dpage/pgadmin4  # Use official image (no need to build)
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
